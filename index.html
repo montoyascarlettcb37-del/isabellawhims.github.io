@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Isabella's !Whims¡</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#fffdf5;
+color:#333;
+}
+
+header{
+background:#0db7b5;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+header img{
+width:120px;
+}
+
+nav{
+background:#ffe28a;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+margin:0 15px;
+}
+
+section{
+padding:50px 10%;
+}
+
+.hero{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+}
+
+.hero-texto{
+flex:1;
+}
+
+.hero-video{
+flex:1;
+}
+
+.hero-video video{
+width:100%;
+border-radius:20px;
+}
+
+.productos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.producto{
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.producto img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+}
+
+input,select,textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+background:#0db7b5;
+color:white;
+border:none;
+padding:15px;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.jpeg" alt="Logo">
+
+<h1>Isabella's !Whims¡</h1>
+
+<p>Pequeños antojos, gran felicidad</p>
+
+</header>
+
+<nav>
+
+<a href="#inicio">Inicio</a>
+<a href="#historia">Historia</a>
+<a href="#productos">Productos</a>
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+<section id="inicio" class="hero">
+
+<div class="hero-texto">
+
+<h2>Postres artesanales en Ciudad Obregón</h2>
+
+<p>
+Pedidos con al menos 24 horas de anticipación.
+Entrega a domicilio y atención mediante WhatsApp.
+</p>
+
+<p>
+"No hay mejor desestrés que hornear"
+</p>
+
+</div>
+
+<div class="hero-video">
+
+<video controls>
+<source src="bollitos.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+<section id="historia">
+
+<h2>Nuestra Historia</h2>
+
+<br>
+
+<p>
+Isabella's !Whims¡ comenzó en 2022 vendiendo postres a compañeros de universidad. Gracias a la aceptación de sus clientes, en 2024 el proyecto comenzó a operar de manera profesional, ofreciendo postres artesanales elaborados sobre pedido en Ciudad Obregón, Sonora.
+</p>
+
+</section>
+
+<section id="productos">
+
+<h2>Productos Destacados</h2>
+
+<div class="productos">
+
+<div class="producto">
+<img src="flan-arroz.jpeg" alt="Flan de Arroz">
+<h3>Flan de Arroz</h3>
+<p>$250 completo</p>
+</div>
+
+<div class="producto">
+<img src="pay-manzana.jpeg" alt="Pay de Manzana">
+<h3>Pay de Manzana</h3>
+<p>$250 completo</p>
+</div>
+
+<div class="producto">
+<img src="pay-datil.jpeg" alt="Pay de Dátil">
+<h3>Pay de Dátil</h3>
+<p>$350 completo</p>
+</div>
+
+<div class="producto">
+<img src="mostachon-banana.jpeg" alt="Mostachón de Banana">
+<h3>Mostachón de Banana</h3>
+<p>Uno de los más vendidos</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2>Haz tu pedido</h2>
+
+<br>
+
+<form action="https://formspree.io/f/mlgvyrej" method="POST">
+
+<input
+type="text"
+name="Nombre"
+placeholder="Nombre completo"
+required>
+
+<input
+type="tel"
+name="Telefono"
+placeholder="Número de teléfono"
+required>
+
+<select name="Producto">
+
+<option>Flan de Arroz</option>
+<option>Pay de Manzana</option>
+<option>Pay de Dátil</option>
+<option>Mostachón de Banana</option>
+
+</select>
+
+<textarea
+name="Mensaje"
+placeholder="Detalles del pedido">
+</textarea>
+
+<button type="submit">
+Enviar Pedido
+</button>
+
+</form>
+
+<br>
+
+<p><strong>Instagram:</strong> @isabellas.whims</p>
+
+<p><strong>Horario:</strong> Lunes a sábado</p>
+
+<p><strong>Pedidos:</strong> Con al menos 24 horas de anticipación</p>
+
+</section>
+
+<footer>
+
+<p>
+Isabella's !Whims¡ | Ciudad Obregón, Sonora
+</p>
+
+</footer>
+
+</body>
+
+</html>
